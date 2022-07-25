@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Lounge</title>
+</head>
+<body>
+ <div class="logo">
+    <img src="img/logo.png">
+ </div>
+
+ <h1>Social network for programers</h1>
+
+ <div class="main-wrapper">
+    <form id="loginForm">
+        <h2>Login</h2>
+
+
+    <div>
+        <label>E mail:</label>
+        <input type="email" name="email" id="login_email" placeholder="example@example.com">
+    </div>
+    <div>
+       <label>Password:</label>
+       <input type="password" name="password" id="login_lozinka" placeholder="********">
+    </div>
+    <div>
+       <button>Login</button>
+    </div>
+ </form>
+</div>
+
+<div class="no-acc-register">
+    <p>Don't have an account yet?</p>
+    <button id="registracija">Sign Up</button>
+</div>
+
+<div class="custom-modal">
+    <button id="closeModal">X</button>
+
+    <form id="registrationForm">
+        <h2>User registration</h2>
+
+        <div>
+            <label for="korisnicko_ime">Username: *</label>
+            <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="user32">
+        </div>
+
+        <div>
+            <label for="email">Email: *</label>
+            <input id="email" type="email" name="register_email" placeholder="example@example.com">
+        </div>
+
+        <div>
+            <label for="lozinka">Password: *</label>
+            <input id="lozinka" type="password" name="register_lozinka" placeholder="********">
+        </div>
+
+        <div>
+            <label for="ponovi_lozinku">Repeat password: *</label>
+            <input id="ponovi_lozinku" type="password" name="ponovi_lozinku" placeholder="********">
+        </div>
+        
+        <div>
+            <button>Sign Up</button>
+        </div>
+
+    </form>
+</div>
+
+
+
+<script src="Validator.js"></script>
+<script src = "Session.js"></script>
+<script src="User.js"></script>
+<script src="app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  border-radius: 50px;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 50px;
+  background-image: url("img/bg.jpg");
+  color: #fff;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 1000px inset;
+}
+p {
+  color: #fff;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.logo {
+  text-align: center;
+}
+
+.main-wrapper {
+  max-width: 650px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 50px;
+}
+
+form div {
+  padding: 15px 0;
+}
+
+form div label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form div input {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+form ul li {
+  color: red;
+}
+form ul {
+  list-style: none;
+}
+
+form div button {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+.no-acc-register {
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  cursor: pointer;
+}
+
+.no-acc-register button {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.no-acc-register p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.custom-modal {
+  display: none;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+  max-width: 650px;
+  margin: auto;
+  padding: 50px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.custom-modal button#closeModal {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background: transparent;
+  border: 0;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.inner-container {
+  border: 1px solid rgb(191, 0, 255);
+  padding: 15px;
+}
+
+.inner-container.left-side {
+  text-align: center;
+}
+
+.inner-container img.profile {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+  display: flex;
+  height: 100px;
+}
+.inner-container.right-side form textarea {
+  background-color: #b88cbf;
+  border-radius: 4px;
+  width: 85%;
+  border: 0;
+  padding: 10px;
+  resize: none;
+  outline-color: rgb(14, 124, 226);
+}
+
+.inner-container.right-side form button {
+  border-radius: 4px;
+  background-color: #dfdfdf;
+  color: #b88cbf;
+  width: 15%;
+  border: 0;
+}
+
+#deleteProfile {
+  border: 2px solid red;
+  background-color: red;
+  color: whitesmoke;
+  padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post {
+  background-color: #b88cbf;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #000;
+}
+#allPostsWrapper .single-post .post-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#allPostsWrapper .single-post .post-actions {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+#allPostsWrapper .single-post .post-actions div button.like-btn {
+  background-image: url("img/like.png");
+  background-color: #dfdfdf;
+  color: #b88cbf;
+  border-radius: 4px;
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+#allPostsWrapper .single-post .post-actions div button.comment-btn {
+  background-image: url("img/comment.png");
+  background-color: #dfdfdf;
+  color: #b88cbf;
+  border-radius: 4px;
+
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+#allPostsWrapper .single-post .post-actions div button.remove-btn {
+  border-color: red;
+  background-color: #dfdfdf;
+  border-radius: 4px;
+  color: red;
+  padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form {
+  height: 30px;
+  margin-top: 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form input {
+  width: 85%;
+  padding: 0 10px;
+}
+
+#allPostsWrapper .single-post .post-comments form button {
+  border-radius: 4px;
+  width: 15%;
+  background-color: #dfdfdf;
+}
+
+#allPostsWrapper .single-post .post-comments {
+  display: none;
+}
+#allPostsWrapper .single-post .post-comments .single-comment {
+  border: 1px dotted blue;
+  padding: 10px;
+  margin-top: 10px;
+}
+#logout {
+  color: #b88cbf;
+  border-radius: 4px;
+  border-color: #b88cbf;
+}
+#editAccount {
+  color: #b88cbf;
+  border-radius: 4px;
+  border-color: #b88cbf;
+}

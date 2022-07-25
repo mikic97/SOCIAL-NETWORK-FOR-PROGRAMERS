@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Lounge</title>
+</head>
+<body>
+
+  <div class="container">
+      
+        <div class="row">
+ 
+        <div class="col-md-3"> 
+            <div class="inner-container left-side">
+                <img src="img/profile.jpg" class="profile">
+
+               <p><b id="username"></b></p>
+               <p><b id="email"></b></p>
+
+               <button id="editAccount">Update profile</button>
+               <button id="logout">Logout</button>
+               
+               </div>
+           
+        </div>
+
+        <div class="col-md-9">
+            <div class="inner-container right-side">
+                <form id="postForm">
+                    <textarea id="postContent" placeholder="What is on your mind?"></textarea>
+                    <button>Post</button>
+                </form>
+
+                <div id="allPostsWrapper"></div>
+
+               </div>
+        </div>
+   </div> 
+</div>
+
+
+<div class="custom-modal">
+    <button id="closeModal">X</button>
+    
+
+    <form id="editForm">
+        <h2>Update your profile info:</h2>
+
+        <div>
+            <label for="korisnicko_ime">Username:</label>
+            <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="user32">
+        </div>
+
+        <div>
+            <label for="edit_email">Email:</label>
+            <input id="edit_email" type="email" name="register_email" placeholder="example@example.com">
+        </div>
+        <div>
+            <button>Change</button>
+        </div>
+        </form>
+        <hr>
+
+        <button id="deleteProfile">Delete profile</button>
+        </div>
+
+
+
+    <script src="Session.js"></script>
+    <script src="User.js"></script>
+    <script src="Comment.js"></script>
+    <script src="Post.js"></script>
+    <script src="lounge.js"></script>
+
+</body>
+</html>
